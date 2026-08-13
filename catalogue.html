@@ -1,4 +1,16 @@
 <main>
+
+<nav>
+        <ul>
+            <a href="index.html">Home</a> |
+            <a href="catalogue.html">Catalogue</a> |
+            <a href="bundles.html">Gift Bundles</a> | 
+            <a href="blog.html">Blog/Reviews</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact</a> |
+        </ul>
+    </nav>
+ 
     <!-- 1. Search Bar (easier for consumers) -->
     <section class="search-container">
         <form action="#" method="get">
@@ -6,7 +18,7 @@
             <button type="submit">Search</button>
         </form>
     </section>
-
+ 
     <div class="catalogue-wrapper">
         <!-- 2. Filter Sidebar will pop out like a bookshelf (Secondary Navigation) -->
         <aside class="filters">
@@ -14,34 +26,36 @@
             
             <h4>Genre</h4>
             <ul>
-                <li><input type="checkbox"> Romance</li>
-                <li><input type="checkbox"> Thrillers</li>
-                <li><input type="checkbox"> Fiction</li>
-                <li><input type="checkbox"> Fantasy </li>
-                <li><input type="checkbox"> Non-Fiction</li>
+                <li><input type="checkbox" class="genre-filter" value="romance"> Romance</li>
+                <li><input type="checkbox" class="genre-filter" value="thriller"> Thrillers</li>
+                <li><input type="checkbox" class="genre-filter" value="fiction"> Fiction</li>
+                <li><input type="checkbox" class="genre-filter" value="fantasy"> Fantasy</li>
+                <li><input type="checkbox" class="genre-filter" value="non-fiction"> Non-Fiction</li>
             </ul>
-
+ 
             <h4>Condition</h4>
             <ul>
-                <li><input type="checkbox"> New</li>
-                <li><input type="checkbox"> Used</li>
-                <li><input type="checkbox"> Like New</li>
+                <li><input type="checkbox" class="condition-filter" value="new"> New</li>
+                <li><input type="checkbox" class="condition-filter" value="used"> Used</li>
+                <li><input type="checkbox" class="condition-filter" value="like new"> Like New</li>
             </ul>
-
+ 
             <h4>Price Range</h4>
             <select name="price-filter">
                 <option value="all">All Prices</option>
                 <option value="95">R95 - R120</option>
                 <option value="149">R121 - R149</option>
+                <option value="new books">above R150 (new)</option>
             </select>
         </aside>
-
+ 
         <!-- 3. All books (Catalogue main content) -->
         <section class="book-grid">
-            <!-- Actual Book Item -->
-            <article class="book-item">
+ 
+            <!-- Original Books -->
+            <article class="book-item" data-genre="fiction" data-condition="used" data-price="95">
                 <div class="book-image">
-                    <img src="images/products/fiction_01.jpg" alt="Actual photo of book title">
+                    <img src="images/products/greatgatsby.jpg" alt="Actual photo of book title">
                 </div>
                 <div class="book-details">
                     <h2 class="book-name">The Great Gatsby</h2>
@@ -51,6 +65,426 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
+ 
+            <article class="book-item" data-genre="fantasy romance" data-condition="new" data-price="350">
+                <div class="book-image">
+                    <img src="images/products/acotar.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">A Court of Thorns and Roses</h2>
+                    <h3 class="author">by Sarah J. Maas</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R350.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance thriller" data-condition="like new" data-price="135">
+                <div class="book-image">
+                    <img src="images/products/verity.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Verity</h2>
+                    <h3 class="author">by Colleen Hoover</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R135.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance" data-condition="new" data-price="260">
+                <div class="book-image">
+                    <img src="images/products/uglylove.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Ugly Love</h2>
+                    <h3 class="author">by Colleen Hoover</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R260.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>     
+            
+            <article class="book-item" data-genre="fantasy romance" data-condition="used" data-price="90">
+                <div class="book-image">
+                    <img src="images/products/fourthwing.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name"> Fourth Wing</h2>
+                    <h3 class="author">by Rebecca Yarros</h3>
+                    <p class="condition">Condition: Used</p>
+                    <p class="price">R90.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <!-- Requested Romance/Contemporary Titles -->
+            <article class="book-item" data-genre="romance" data-condition="used" data-price="110">
+                <div class="book-image">
+                    <img src="images/products/archersvoice.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Archer's Voice</h2>
+                    <h3 class="author">by Mia Sheridan</h3>
+                    <p class="condition">Condition: Used (Good)</p>
+                    <p class="price">R110.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="245">
+                <div class="book-image">
+                    <img src="images/products/betterthanthemovies.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Better Than the Movies</h2>
+                    <h3 class="author">by Lynn Painter</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R245.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance" data-condition="like new" data-price="180">
+                <div class="book-image">
+                    <img src="images/products/binding13.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Binding 13</h2>
+                    <h3 class="author">by Chloe Walsh</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R180.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="220">
+                <div class="book-image">
+                    <img src="images/products/ifyoucouldseethesun.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">If You Could See the Sun</h2>
+                    <h3 class="author">by Ann Liang</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R220.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="fiction romance" data-condition="used" data-price="99">
+                <div class="book-image">
+                    <img src="images/products/normalpeople.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Normal People</h2>
+                    <h3 class="author">by Sally Rooney</h3>
+                    <p class="condition">Condition: Used</p>
+                    <p class="price">R99.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance" data-condition="like new" data-price="140">
+                <div class="book-image">
+                    <img src="images/products/thedeal.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Deal</h2>
+                    <h3 class="author">by Elle Kennedy</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R140.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="280">
+                <div class="book-image">
+                    <img src="images/products/itendswithus.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">It Ends With Us</h2>
+                    <h3 class="author">by Colleen Hoover</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R280.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance" data-condition="used" data-price="105">
+                <div class="book-image">
+                    <img src="images/products/playalong.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Play Along</h2>
+                    <h3 class="author">by Liz Tomforde</h3>
+                    <p class="condition">Condition: Used (Good)</p>
+                    <p class="price">R105.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="fantasy romance" data-condition="used" data-price="120">
+                <div class="book-image">
+                    <img src="images/products/shatterme.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Shatter Me</h2>
+                    <h3 class="author">by Tahereh Mafi</h3>
+                    <p class="condition">Condition: Used</p>
+                    <p class="price">R120.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="255">
+                <div class="book-image">
+                    <img src="images/products/thelovehypothesis.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Love Hypothesis</h2>
+                    <h3 class="author">by Ali Hazelwood</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R255.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance" data-condition="like new" data-price="160">
+                <div class="book-image">
+                    <img src="images/products/fromlukovwithlove.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">From Lukov with Love</h2>
+                    <h3 class="author">by Mariana Zapata</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R160.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="230">
+                <div class="book-image">
+                    <img src="images/products/thespanishlovedeception.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Spanish Love Deception</h2>
+                    <h3 class="author">by Elena Armas</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R230.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance" data-condition="used" data-price="115">
+                <div class="book-image">
+                    <img src="images/products/thefineprint.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Fine Print</h2>
+                    <h3 class="author">by Lauren Asher</h3>
+                    <p class="condition">Condition: Used (Good)</p>
+                    <p class="price">R115.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance" data-condition="like new" data-price="170">
+                <div class="book-image">
+                    <img src="images/products/termsandconditions.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Terms and Conditions</h2>
+                    <h3 class="author">by Lauren Asher</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R170.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="romance fiction" data-condition="used" data-price="95">
+                <div class="book-image">
+                    <img src="images/products/thesummeriturnedpretty.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Summer I Turned Pretty</h2>
+                    <h3 class="author">by Jenny Han</h3>
+                    <p class="condition">Condition: Used</p>
+                    <p class="price">R95.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="fantasy romance" data-condition="new" data-price="290">
+                <div class="book-image">
+                    <img src="images/products/thiswovenkingdom.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">This Woven Kingdom</h2>
+                    <h3 class="author">by Tahereh Mafi</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R290.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <!-- Extra Thrillers -->
+            <article class="book-item" data-genre="thriller fiction" data-condition="used" data-price="100">
+                <div class="book-image">
+                    <img src="images/products/gonegirl.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Gone Girl</h2>
+                    <h3 class="author">by Gillian Flynn</h3>
+                    <p class="condition">Condition: Used (Good)</p>
+                    <p class="price">R100.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="thriller fiction" data-condition="like new" data-price="145">
+                <div class="book-image">
+                    <img src="images/products/thesilentpatient.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Silent Patient</h2>
+                    <h3 class="author">by Alex Michaelides</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R145.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="thriller" data-condition="used" data-price="90">
+                <div class="book-image">
+                    <img src="images/products/thegirlonthetrain.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Girl on the Train</h2>
+                    <h3 class="author">by Paula Hawkins</h3>
+                    <p class="condition">Condition: Used</p>
+                    <p class="price">R90.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="thriller fiction" data-condition="new" data-price="210">
+                <div class="book-image">
+                    <img src="images/products/thenshewasgone.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Then She Was Gone</h2>
+                    <h3 class="author">by Lisa Jewell</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R210.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <!-- Extra Non-Fiction -->
+            <article class="book-item" data-genre="non-fiction" data-condition="new" data-price="320">
+                <div class="book-image">
+                    <img src="images/products/atomichabits.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Atomic Habits</h2>
+                    <h3 class="author">by James Clear</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R320.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="non-fiction" data-condition="used" data-price="125">
+                <div class="book-image">
+                    <img src="images/products/educated.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Educated</h2>
+                    <h3 class="author">by Tara Westover</h3>
+                    <p class="condition">Condition: Used (Good)</p>
+                    <p class="price">R125.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="non-fiction" data-condition="like new" data-price="195">
+                <div class="book-image">
+                    <img src="images/products/sapiens.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Sapiens: A Brief History of Humankind</h2>
+                    <h3 class="author">by Yuval Noah Harari</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R195.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="non-fiction" data-condition="used" data-price="110">
+                <div class="book-image">
+                    <img src="images/products/untamed.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Untamed</h2>
+                    <h3 class="author">by Glennon Doyle</h3>
+                    <p class="condition">Condition: Used</p>
+                    <p class="price">R110.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <!-- Extra Fantasy -->
+            <article class="book-item" data-genre="fantasy" data-condition="new" data-price="260">
+                <div class="book-image">
+                    <img src="images/products/thecruelprince.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Cruel Prince</h2>
+                    <h3 class="author">by Holly Black</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R260.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="fantasy romance" data-condition="like new" data-price="310">
+                <div class="book-image">
+                    <img src="images/products/acourtofsilverflames.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">A Court of Silver Flames</h2>
+                    <h3 class="author">by Sarah J. Maas</h3>
+                    <p class="condition">Condition: Like New</p>
+                    <p class="price">R310.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="fantasy" data-condition="used" data-price="130">
+                <div class="book-image">
+                    <img src="images/products/throneofglass.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">Throne of Glass</h2>
+                    <h3 class="author">by Sarah J. Maas</h3>
+                    <p class="condition">Condition: Used (Good)</p>
+                    <p class="price">R130.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+ 
+            <article class="book-item" data-genre="fantasy" data-condition="new" data-price="275">
+                <div class="book-image">
+                    <img src="images/products/thenameofthewind.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Name of the Wind</h2>
+                    <h3 class="author">by Patrick Rothfuss</h3>
+                    <p class="condition">Condition: New</p>
+                    <p class="price">R275.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>           
 
          
         </section>
