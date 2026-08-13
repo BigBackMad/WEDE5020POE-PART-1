@@ -1,0 +1,58 @@
+<main>
+    <!-- 1. Search Bar (easier for consumers) -->
+    <section class="search-container">
+        <form action="#" method="get">
+            <input type="text" placeholder="Search by title, author, or ISBN..." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <div class="catalogue-wrapper">
+        <!-- 2. Filter Sidebar will pop out like a bookshelf for CSS (Secondary Navigation) -->
+        <aside class="filters">
+            <h3>Filter Books</h3>
+            
+            <h4>Genre</h4>
+            <ul>
+                <li><input type="checkbox"> Romance</li>
+                <li><input type="checkbox"> Thrillers</li>
+                <li><input type="checkbox"> Fiction</li>
+                <li><input type="checkbox"> Fantasy </li>
+                <li><input type="checkbox"> Non-Fiction</li>
+            </ul>
+
+            <h4>Condition</h4>
+            <ul>
+                <li><input type="checkbox"> New</li>
+                <li><input type="checkbox"> Used</li>
+                <li><input type="checkbox"> Like New</li>
+            </ul>
+
+            <h4>Price Range</h4>
+            <select name="price-filter">
+                <option value="all">All Prices</option>
+                <option value="95">R95 - R120</option>
+                <option value="149">R121 - R149</option>
+            </select>
+        </aside>
+
+        <!-- 3. All books (Catalogue main content) -->
+        <section class="book-grid">
+            <!-- Actual Book Item -->
+            <article class="book-item">
+                <div class="book-image">
+                    <img src="images/products/fiction_01.jpg" alt="Actual photo of book title">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-name">The Great Gatsby</h2>
+                    <h3 class="author">by F. Scott Fitzgerald</h3>
+                    <p class="condition">Condition: Used (Good)</p>
+                    <p class="price">R95.00</p>
+                    <button type="button">See the Book</button>
+                </div>
+            </article>
+
+         
+        </section>
+    </div>
+</main>
