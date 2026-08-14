@@ -1,6 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue | Little Woods Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
 <main>
 
-<nav>
+    <nav>
         <ul>
             <a href="index.html">Home</a> |
             <a href="catalogue.html">Catalogue</a> |
@@ -10,7 +20,7 @@
             <a href="contact.html">Contact</a> |
         </ul>
     </nav>
- 
+
     <!-- 1. Search Bar (easier for consumers) -->
     <section class="search-container">
         <form action="#" method="get">
@@ -18,7 +28,7 @@
             <button type="submit">Search</button>
         </form>
     </section>
- 
+
     <div class="catalogue-wrapper">
         <!-- 2. Filter Sidebar will pop out like a bookshelf (Secondary Navigation) -->
         <aside class="filters">
@@ -32,14 +42,14 @@
                 <li><input type="checkbox" class="genre-filter" value="fantasy"> Fantasy</li>
                 <li><input type="checkbox" class="genre-filter" value="non-fiction"> Non-Fiction</li>
             </ul>
- 
+
             <h4>Condition</h4>
             <ul>
                 <li><input type="checkbox" class="condition-filter" value="new"> New</li>
                 <li><input type="checkbox" class="condition-filter" value="used"> Used</li>
                 <li><input type="checkbox" class="condition-filter" value="like new"> Like New</li>
             </ul>
- 
+
             <h4>Price Range</h4>
             <select name="price-filter">
                 <option value="all">All Prices</option>
@@ -48,10 +58,10 @@
                 <option value="new books">above R150 (new)</option>
             </select>
         </aside>
- 
+
         <!-- 3. All books (Catalogue main content) -->
         <section class="book-grid">
- 
+
             <!-- Original Books -->
             <article class="book-item" data-genre="fiction" data-condition="used" data-price="95">
                 <div class="book-image">
@@ -65,7 +75,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="fantasy romance" data-condition="new" data-price="350">
                 <div class="book-image">
                     <img src="images/products/acotar.jpg" alt="Actual photo of book title">
@@ -78,7 +88,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance thriller" data-condition="like new" data-price="135">
                 <div class="book-image">
                     <img src="images/products/verity.jpg" alt="Actual photo of book title">
@@ -91,7 +101,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance" data-condition="new" data-price="260">
                 <div class="book-image">
                     <img src="images/products/uglylove.jpg" alt="Actual photo of book title">
@@ -117,7 +127,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <!-- Requested Romance/Contemporary Titles -->
             <article class="book-item" data-genre="romance" data-condition="used" data-price="110">
                 <div class="book-image">
@@ -131,7 +141,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="245">
                 <div class="book-image">
                     <img src="images/products/betterthanthemovies.jpg" alt="Actual photo of book title">
@@ -144,7 +154,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance" data-condition="like new" data-price="180">
                 <div class="book-image">
                     <img src="images/products/binding13.jpg" alt="Actual photo of book title">
@@ -157,7 +167,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="220">
                 <div class="book-image">
                     <img src="images/products/ifyoucouldseethesun.jpg" alt="Actual photo of book title">
@@ -170,7 +180,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="fiction romance" data-condition="used" data-price="99">
                 <div class="book-image">
                     <img src="images/products/normalpeople.jpg" alt="Actual photo of book title">
@@ -183,7 +193,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance" data-condition="like new" data-price="140">
                 <div class="book-image">
                     <img src="images/products/thedeal.jpg" alt="Actual photo of book title">
@@ -196,7 +206,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="280">
                 <div class="book-image">
                     <img src="images/products/itendswithus.jpg" alt="Actual photo of book title">
@@ -209,7 +219,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance" data-condition="used" data-price="105">
                 <div class="book-image">
                     <img src="images/products/playalong.jpg" alt="Actual photo of book title">
@@ -222,7 +232,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="fantasy romance" data-condition="used" data-price="120">
                 <div class="book-image">
                     <img src="images/products/shatterme.jpg" alt="Actual photo of book title">
@@ -235,7 +245,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="255">
                 <div class="book-image">
                     <img src="images/products/thelovehypothesis.jpg" alt="Actual photo of book title">
@@ -248,7 +258,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance" data-condition="like new" data-price="160">
                 <div class="book-image">
                     <img src="images/products/fromlukovwithlove.jpg" alt="Actual photo of book title">
@@ -261,7 +271,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance fiction" data-condition="new" data-price="230">
                 <div class="book-image">
                     <img src="images/products/thespanishlovedeception.jpg" alt="Actual photo of book title">
@@ -274,7 +284,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance" data-condition="used" data-price="115">
                 <div class="book-image">
                     <img src="images/products/thefineprint.jpg" alt="Actual photo of book title">
@@ -287,7 +297,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance" data-condition="like new" data-price="170">
                 <div class="book-image">
                     <img src="images/products/termsandconditions.jpg" alt="Actual photo of book title">
@@ -300,7 +310,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="romance fiction" data-condition="used" data-price="95">
                 <div class="book-image">
                     <img src="images/products/thesummeriturnedpretty.jpg" alt="Actual photo of book title">
@@ -313,7 +323,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="fantasy romance" data-condition="new" data-price="290">
                 <div class="book-image">
                     <img src="images/products/thiswovenkingdom.jpg" alt="Actual photo of book title">
@@ -326,8 +336,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
-            <!-- Extra Thrillers -->
+
             <article class="book-item" data-genre="thriller fiction" data-condition="used" data-price="100">
                 <div class="book-image">
                     <img src="images/products/gonegirl.jpg" alt="Actual photo of book title">
@@ -340,7 +349,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="thriller fiction" data-condition="like new" data-price="145">
                 <div class="book-image">
                     <img src="images/products/thesilentpatient.jpg" alt="Actual photo of book title">
@@ -353,7 +362,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="thriller" data-condition="used" data-price="90">
                 <div class="book-image">
                     <img src="images/products/thegirlonthetrain.jpg" alt="Actual photo of book title">
@@ -366,7 +375,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="thriller fiction" data-condition="new" data-price="210">
                 <div class="book-image">
                     <img src="images/products/thenshewasgone.jpg" alt="Actual photo of book title">
@@ -379,8 +388,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
-            <!-- Extra Non-Fiction -->
+
             <article class="book-item" data-genre="non-fiction" data-condition="new" data-price="320">
                 <div class="book-image">
                     <img src="images/products/atomichabits.jpg" alt="Actual photo of book title">
@@ -393,7 +401,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="non-fiction" data-condition="used" data-price="125">
                 <div class="book-image">
                     <img src="images/products/educated.jpg" alt="Actual photo of book title">
@@ -406,7 +414,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="non-fiction" data-condition="like new" data-price="195">
                 <div class="book-image">
                     <img src="images/products/sapiens.jpg" alt="Actual photo of book title">
@@ -419,7 +427,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="non-fiction" data-condition="used" data-price="110">
                 <div class="book-image">
                     <img src="images/products/untamed.jpg" alt="Actual photo of book title">
@@ -432,8 +440,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
-            <!-- Extra Fantasy -->
+
             <article class="book-item" data-genre="fantasy" data-condition="new" data-price="260">
                 <div class="book-image">
                     <img src="images/products/thecruelprince.jpg" alt="Actual photo of book title">
@@ -446,7 +453,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="fantasy romance" data-condition="like new" data-price="310">
                 <div class="book-image">
                     <img src="images/products/acourtofsilverflames.jpg" alt="Actual photo of book title">
@@ -459,7 +466,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="fantasy" data-condition="used" data-price="130">
                 <div class="book-image">
                     <img src="images/products/throneofglass.jpg" alt="Actual photo of book title">
@@ -472,7 +479,7 @@
                     <button type="button">See the Book</button>
                 </div>
             </article>
- 
+
             <article class="book-item" data-genre="fantasy" data-condition="new" data-price="275">
                 <div class="book-image">
                     <img src="images/products/thenameofthewind.jpg" alt="Actual photo of book title">
@@ -484,9 +491,12 @@
                     <p class="price">R275.00</p>
                     <button type="button">See the Book</button>
                 </div>
-            </article>           
+            </article>
 
-         
         </section>
     </div>
+
 </main>
+
+</body>
+</html>
