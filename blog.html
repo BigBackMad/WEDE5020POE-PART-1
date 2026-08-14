@@ -6,7 +6,6 @@
     <title>Blog & Reviews | Little Woods Books</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
 
     <header>
         <nav>
@@ -22,67 +21,66 @@
         </nav>
     </header>
 
+    <body>
     <main>
+    <!-- 1. Highlight of the Week (Featured Post) -->
+    <article class="featured-post">
+        <header>
+            <h1>Highlight of the Week</h1>
+            <p class="post-meta">Written by the Owner | August 14, 2026</p>
+        </header>
+        
+        <div class="post-content">
+            <img src="images/blog/owner_pick_large.jpg" alt="Owner's book of the week" style="float: right; margin: 20px; width: 40%;">
+            <h2>The Magic of Secondhand Stories</h2>
+            <p>This week, I spent my morning at an estate sale in Gardens, and I found something truly special... [Your blog text goes here]</p>
+            <a href="#">Read the full story...</a>
+        </div>
+    </article>
 
+    <hr> <!-- Visual break between sections -->
 
+    <!-- 2. Top Favourites Grid -->
+    <section class="favourites-section">
+        <h2>Owner’s Monthly Favourites</h2>
+        <div class="favourites-grid">
+            <!-- Review 1 -->
+            <article class="review-card">
+                <img src="images/products/fiction_01.jpg" alt="Book Cover" style="width: 100%;">
+                <h3>The Great Gatsby</h3>
+                <p class="rating">★★★★★</p>
+                <p><strong>Owner's Note:</strong> An absolute classic that never gets old. The condition of our current used copies is fantastic.</p>
+                <a href="catalogue.html">See in Shop</a>
+            </article>
 
+            <!-- Repeat <article> for more reviews -->
+        </div>
+    </section>
 
+    <!-- 3. Sidebar for Navigation & Growth -->
+    <aside class="blog-sidebar">
+        <section>
+            <h3>Browse by Category</h3>
+            <ul>
+                <li><a href="#">Staff Picks</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Reading Lists</a></li>
+            </ul>
+        </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </main>
-
+        <section class="newsletter-box">
+            <h3>Never Miss a Deal</h3>
+            <p>Get my weekly highlights and exclusive discounts sent to your inbox.</p>
+            <form>
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </aside>
+</main>
     <footer>
         <p>&copy; 2026 Little Woods Books. All rights reserved.</p>
     </footer>
-    
+
 </body>
 </html>
